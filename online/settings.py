@@ -59,7 +59,7 @@ WSGI_APPLICATION = 'online.wsgi.application'
 import dj_database_url
 
 
-DATABASES = {'default': dj_database_url.config(default='mysql://root:@localhost:3306/db_campeonato2015')}
+DATABASES = {'default': dj_database_url.config(default='mysql://root:@localhost:3306/bd_online')}
 
 #DATABASES['default'] = dj_database_url.config()
 # Internationalization
