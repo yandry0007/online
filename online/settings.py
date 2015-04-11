@@ -57,7 +57,11 @@ WSGI_APPLICATION = 'online.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/1.7/ref/settings/#databases
 import dj_database_url
-DATABASES['default'] = dj_database_url.config()
+
+
+DATABASES = {'default': dj_database_url.config(default='mysql://root:@localhost:3306/db_campeonato2015')}
+
+#DATABASES['default'] = dj_database_url.config()
 # Internationalization
 # https://docs.djangoproject.com/en/1.7/topics/i18n/
 
